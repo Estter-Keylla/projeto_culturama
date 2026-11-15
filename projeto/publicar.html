@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culturama | Publicar Evento</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container barra">
+            <a href="../projeto/index.html" class="logo">✿ Culturama</a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="../projeto/index.html">Início</a>
+                <a href="../projeto/eventos.html">Eventos</a>
+                <a href="../projeto/publicar.html" class="ativo">Publicar</a>
+                <a href="../projeto/cadastro.html">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container secao">
+
+        <div class="titulo-pagina">
+            <p class="etiqueta">COMPARTILHE CULTURA</p>
+            <h1>Publique seu evento</h1>
+            <p>
+                Preencha as informações abaixo para preparar
+                a divulgação do seu evento cultural.
+            </p>
+        </div>
+
+        <section class="formulario-caixa">
+
+            <h2>Informações do evento</h2>
+
+            <!--<p class="aviso">
+                Formulário demonstrativo. Os dados não serão
+                enviados nem armazenados nesta versão.
+            </p> -->
+
+            <!-- Formulário sem envio -->
+            <form>
+
+                <div class="campo">
+                    <label for="organizador">
+                        Nome do organizador *
+                    </label>
+                    <input type="text" id="organizador" name="organizador" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nome-evento">
+                        Nome do evento *
+                    </label>
+                    <input type="text" id="nome-evento" name="nome-evento" placeholder="Ex: Festival Cultural" required>
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">
+                        Categoria *
+                    </label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="">
+                            Selecione uma categoria
+                        </option>
+                        <option value="show">Entretenimento</option>
+                        <option value="palestra">Tecnologia</option>
+                        <option value="comunidade">Comunidade</option>
+                        <option value="esportes">Esportes e Bem-Estar</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao">
+                        Descrição do evento *
+                    </label>
+                    <textarea id="descricao" name="descricao" rows="5" placeholder="Conte como será o evento..."
+                        required></textarea>
+                </div>
+
+                <div class="duas-colunas">
+
+                    <div class="campo">
+                        <label for="data">
+                            Data do evento *
+                        </label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="horario">
+                            Horário de início *
+                        </label>
+                        <input 
+                        type="time" 
+                        id="horario" 
+                        name="horario" required>
+                    </div>
+
+                </div>
+
+                <div class="campo">
+                    <label for="endereco">
+                        Endereço *
+                    </label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro..." required>
+                </div>
+
+                <!--<div class="campo">
+                    <label for="bairro">
+                        Bairro *
+                    </label>
+                    <input
+                        type="text"
+                        id="bairro"
+                        name="bairro"
+                        placeholder="Informe o bairro"
+                        required>
+                </div>-->
+
+                <fieldset class="campo">
+                    <legend>Tipo de entrada *</legend>
+
+                    <div class="opcoes">
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="entrada" 
+                            value="gratuito" 
+                            required>
+                            Gratuito
+                        </label>
+
+                        <!--type="radio"cria um botão de opção que permite ao usuário escolher aapenas uma única alternativa de um conjunto de opções.-->
+
+                        <label>
+                            <input 
+                            type="radio" 
+                            name="entrada" 
+                            value="pago">
+                            Pago
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <div class="campo">
+                    <label for="valor">
+                        Valor do ingresso (R$)
+                    </label>
+                    <input 
+                    type="number" 
+                    id="valor" 
+                    name="valor" 
+                    min="0" 
+                    step="0.01" 
+                    placeholder="0,00"> <!-- step para definir que o campo aceita números com até duas casas decimais. -->
+                    <small>
+                        Deixe em branco se o evento for gratuito.
+                    </small>
+                </div>
+
+                <div class="campo">
+                    <label for="imagem">
+                        Imagem ou cartaz *
+                    </label>
+                    <input 
+                    type="file" 
+                    id="imagem" 
+                    name="imagem" 
+                    accept="image/*" required>
+                    <!--Limita a seleção de arquivos na janela do computador ou celular apenas a imagens (como PNG, JPG, GIF, WebP-->
+                    <small>
+                        Escolha uma imagem sobre o evento.
+                    </small>
+                </div>
+
+                <button type="button" class="botao botao-largo" disabled>
+                    Publicar evento
+                </button>
+
+                <!--<p class="aviso">
+                    A publicação estará disponível
+                    em uma versão futura.
+                </p>-->
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>✿ Culturama</strong></p>
+            <p>Conectando pessoas através da cultura.</p>
+            <p>Contato: contato@culturama.gmail.com</p>
+            <p>© 2026 Culturama - Projeto acadêmico.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culturama | Cadastro</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <div class="container barra">
+            <a href="../projeto/index.html" class="logo">✿ Culturama</a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="../projeto/index.html">Início</a>
+                <a href="../projeto/eventos.html">Eventos</a>
+                <a href="../projeto/publicar.html">Publicar</a>
+                <a href="../projeto/cadastro.html" class="ativo">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container secao">
+
+        <div class="titulo-pagina">
+            <p class="etiqueta">FAÇA PARTE</p>
+            <h1>Cadastre-se no Culturama</h1>
+            <p>
+                Faça parte de uma comunidade que
+                valoriza a cultura e os eventos locais.
+            </p>
+        </div>
+
+        <section class="formulario-caixa formulario-menor">
+
+            <h2>Crie sua conta</h2>
+
+           <!-- <p class="aviso">
+                Cadastro demonstrativo. Nenhuma informação
+                será armazenada.
+            </p>-->
+
+            <form>
+
+                <div class="campo">
+                    <label for="nome">
+                        Nome completo *
+                    </label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome completo"
+                        autocomplete="name"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">
+                        E-mail *
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="seuemail@exemplo.com"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="usuario">
+                        Nome de usuário *
+                    </label>
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Escolha um nome de usuário"
+                        autocomplete="username"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">
+                        Senha *
+                    </label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        minlength="8"
+                        autocomplete="new-password"
+                        placeholder="Mínimo de 8 caracteres"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="confirmar-senha">
+                        Confirmar senha *
+                    </label>
+                    <input
+                        type="password"
+                        id="confirmar-senha"
+                        name="confirmar-senha"
+                        minlength="8"
+                        autocomplete="new-password"
+                        placeholder="Digite a senha novamente"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="perfil">
+                        Tipo de perfil *
+                    </label>
+                    <select id="perfil"
+                            name="perfil"
+                            required>
+                        <option value="">
+                            Selecione seu perfil
+                        </option>
+                        <option value="participante">
+                            Participante
+                        </option>
+                        <option value="organizador">
+                            Organizador
+                        </option>
+                    </select>
+                </div>
+
+                <button type="button"
+                        class="botao botao-largo"
+                        disabled>
+                    Cadastrar
+                </button>
+
+                <p class="aviso">
+                    O cadastro será ativado futuramente.
+                </p>
+
+            </form>
+
+           <!-- <div class="mensagem-formulario">
+                <p>
+                    Já possui cadastro?
+                    <a href="cadastro.html#aviso-acesso">
+                        Acessar minha conta
+                    </a>
+                </p>
+
+                <p id="aviso-acesso" class="aviso">
+                    A página de login ainda não está
+                    disponível nesta versão.
+                </p>
+            </div>-->
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>✿ Culturama</strong></p>
+            <p>Conectando pessoas através da cultura.</p>
+            <p>Contato: contato@culturama.gmail.com</p>
+            <p>© 2026 Culturama - Projeto acadêmico.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

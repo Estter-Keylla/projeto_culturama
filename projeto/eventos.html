@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culturama | Eventos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container barra">
+            <a href="../projeto/index.html" class="logo">✿ Culturama</a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="../projeto/index.html">Início</a>
+                <a href="../projeto/eventos.html" class="ativo">Eventos</a>
+                <a href="../projeto/publicar.html">Publicar</a>
+                <a href="../projeto/cadastro.html">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container secao">
+
+        <div class="titulo-pagina">
+            <p class="etiqueta">DESCUBRA SUA CIDADE</p>
+            <h1>Todos os eventos</h1>
+            <p>
+                Explore a programação cultural e encontre
+                atividades para participar.
+            </p>
+        </div>
+
+        <!-- Conteúdo principal e barra lateral -->
+        <div class="layout-eventos">
+
+            <div class="conteudo-eventos">
+
+                <!-- Filtros visuais -->
+                <section class="painel">
+                    <h2>Encontre seu evento</h2>
+
+                    <div class="filtros">
+                        <div class="campo">
+                            <label for="filtro-categoria">
+                                Categoria
+                            </label>
+                            <select id="filtro-categoria">
+                                <option>Todas</option>
+                                <option>Shows</option>
+                                <option>Tecnologia</option>
+                                <option>Comunidade</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="filtro-data">Data</label>
+                            <input type="date" id="filtro-data">
+                        </div>
+
+                        <div class="campo">
+                            <label for="filtro-bairro">Cidade</label>
+                            <select id="filtro-bairro">
+                                <option>João Pessoa</option>
+                                <option>Sape</option>
+                                <option>Caapoarã</option>
+                                <option>Santa Rita</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p class="aviso">
+                        Filtros demonstrativos nesta versão e voltados somente para o estado da Paraíba.
+                    </p>
+                </section>
+
+                <!-- Categoria Shows -->
+                <section class="grupo-eventos">
+                    <h2>🎵 Shows</h2>
+
+                    <div class="grade-eventos">
+
+                        <article class="card">
+                            <img src="../imagens_programacao/alcione.png" alt="">
+                            <div class="card-conteudo">
+                                <span class="categoria">Show</span>
+                                <h3>Alcione - 50 anos de musica</h3>
+                                <p>📅 11/12/2026 - 21h</p>
+                                <p>📍 Teatro Pedra do Reino</p>
+                                <p>🎶 “Você me vira a cabeça, me tira do sério...” e nós vamos cantar isso tudo bem alto
+                                    ao vivo! 🥂✨</p>
+                                <p class="preco">Pago</p>
+
+                                <div class="acoes-card">
+                                    <a href="https://meaple.com.br/ls-entretenimento/alcione-em-joao-pessoa"
+                                        class="botao botao-pequeno">
+                                        Garanta seus ingressos!
+                                    </a>
+                                    <!--<button type="button" class="botao-secundario" disabled>
+                                        Eu vou
+                                    </button>-->
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <img src="../imagens_programacao/wanessa.camargo.png" alt="">
+                            <div class="card-conteudo">
+                                <span class="categoria">Show</span>
+                                <h3>Wanessa Camargo (Concerto de Natal)</h3>
+                                <p>📅 19 de dezembro de 2026 - 19h</p>
+                                <p>📍 Busto de Tamandaré</p>
+                                <p>
+                                    Programação natalina da cidade
+                                </p>
+                                <p class="preco">Gratuita</p>
+
+                                <div class="acoes-card">
+                                    <a href="https://pt.wikipedia.org/wiki/Wanessa_Camargo" class="botao botao-pequeno">
+                                        Conheça a artista
+                                    </a>
+                                    <!--<button type="button" class="botao-secundario" disabled>
+                                        Eu vou
+                                    </button>-->
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- Categoria Tecnologia -->
+                <section class="grupo-eventos">
+                    <h2>🎤 Tecnologia</h2>
+
+                    <div class="grade-eventos">
+
+                        <article class="card">
+                            <img src="../imagens_programacao/festival_funetec.png" alt="">
+                            <div class="card-conteudo">
+                                <span class="categoria">Palestra</span>
+                                <h3>2º Festival Funetec</h3>
+                                <p>📅 02/12/2026 - 08h</p>
+                                <p>📍 Espaço Cultural José Lins do Rêgo</p>
+                                <p>
+                                    Se você busca oportunidades de negócios, atualização profissional, networking com
+                                    grandes marcas e imersão cultural, o Festival Funetec 2026 é o seu lugar!
+                                </p>
+                                <p class="preco">Gratuito</p>
+                                <div class="acoes-card">
+                                    <a href="https://www.festivalfunetec.com.br/"
+                                        class="botao botao-pequeno">
+                                        Garanta seus ingressos!
+                                    </a>
+
+                                <!--<div class="acoes-card">
+
+                                     Detalhes do evento na mesma página 
+                                    <details class="detalhes-card">
+
+                                        <summary>Ver detalhes</summary>
+
+                                        <div class="conteudo-detalhes">
+
+                                            <h3>Sobre o evento</h3>
+
+                                            <p>
+                                                Uma noite especial com apresentações
+                                                de artistas locais e música brasileira.
+                                            </p>
+
+                                            <p>
+                                                <strong>Data:</strong> 21/11/2026
+                                            </p>
+
+                                            <p>
+                                                <strong>Horário:</strong> 19h às 22h
+                                            </p>
+
+                                            <p>
+                                                <strong>Local:</strong> Centro Cultural
+                                            </p>
+
+                                            <p>
+                                                <strong>Bairro:</strong> Centro
+                                            </p>
+
+                                            <p>
+                                                <strong>Organizador:</strong>
+                                                Coletivo Cultura Viva
+                                            </p>
+
+                                            <p>
+                                                <strong>Entrada:</strong> Gratuita
+                                            </p>
+
+                                            <a href="https://www.google.com/maps/search/?api=1&query=Centro+Joao+Pessoa+PB"
+                                                target="_blank" rel="noopener noreferrer" class="botao-secundario">
+                                                Ver localização
+                                            </a>
+
+                                            <button type="button" class="botao" disabled>
+                                                Eu vou
+                                            </button>
+
+                                        </div>
+
+                                    </details>
+
+                                    class="botao botao-pequeno">
+                                    Ver detalhes
+                                    </a>
+                                    <button type="button" class="botao-secundario" disabled>
+                                        Eu vou
+                                    </button>-->
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <img src="imagens/palestra.jpg" alt="Auditório de palestras">
+                            <div class="card-conteudo">
+                                <span class="categoria">Palestra</span>
+                                <h3>Mulheres na Ciência</h3>
+                                <p>📅 27/11/2026 - 16h</p>
+                                <p>📍 Biblioteca Municipal - Centro</p>
+                                <p>
+                                    Encontro sobre a presença
+                                    feminina na ciência.
+                                </p>
+                                <p class="preco">Gratuito</p>
+
+                                <div class="acoes-card">
+                                    <a href="detalhes.html" class="botao botao-pequeno">
+                                        Ver detalhes
+                                    </a>
+                                    <button type="button" class="botao-secundario" disabled>
+                                        Eu vou
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- Categoria Comunidade -->
+                <section class="grupo-eventos">
+                    <h2>🌿 Comunidade</h2>
+
+                    <div class="grade-eventos">
+
+                        <article class="card">
+                            <img src="imagens/comunidade.jpg" alt="Feira cultural">
+                            <div class="card-conteudo">
+                                <span class="categoria">Comunidade</span>
+                                <h3>Feira de Arte e Cultura</h3>
+                                <p>📅 29/11/2026 - 09h</p>
+                                <p>📍 Praça das Artes - Bancários</p>
+                                <p>
+                                    Feira de artesanato,
+                                    gastronomia e arte local.
+                                </p>
+                                <p class="preco">Gratuito</p>
+
+                                <div class="acoes-card">
+                                    <a href="detalhes.html" class="botao botao-pequeno">
+                                        Ver detalhes
+                                    </a>
+                                    <button type="button" class="botao-secundario" disabled>
+                                        Eu vou
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <img src="imagens/comunidade.jpg" alt="Atividade comunitária">
+                            <div class="card-conteudo">
+                                <span class="categoria">Comunidade</span>
+                                <h3>Manhã na Comunidade</h3>
+                                <p>📅 22/11/2026 - 08h</p>
+                                <p>📍 Praça Comunitária - Torre</p>
+                                <p>
+                                    Oficinas, atividades
+                                    educativas e recreação.
+                                </p>
+                                <p class="preco">Gratuito</p>
+
+                                <div class="acoes-card">
+                                    <a href="detalhes.html" class="botao botao-pequeno">
+                                        Ver detalhes
+                                    </a>
+                                    <button type="button" class="botao-secundario" disabled>
+                                        Eu vou
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Calendário lateral -->
+            <aside class="lateral">
+                <div class="painel calendario">
+                    <h2>Novembro 2026</h2>
+                    <p>Datas da programação</p>
+
+                    <div class="dias-semana">
+                        <span>D</span>
+                        <span>S</span>
+                        <span>T</span>
+                        <span>Q</span>
+                        <span>Q</span>
+                        <span>S</span>
+                        <span>S</span>
+                    </div>
+
+                    <div class="dias">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                        <span>19</span>
+                        <span>20</span>
+                        <span class="dia-evento">21</span>
+
+                        <span class="dia-evento">22</span>
+                        <span>23</span>
+                        <span>24</span>
+                        <span class="dia-evento">25</span>
+                        <span>26</span>
+                        <span class="dia-evento">27</span>
+                        <span class="dia-evento">28</span>
+
+                        <span class="dia-evento">29</span>
+                        <span>30</span>
+                    </div>
+
+                    <p class="legenda">
+                        ● Dias com eventos
+                    </p>
+                </div>
+
+                <div class="painel painel-lateral">
+                    <h3>Divulgue seu evento</h3>
+                    <p>
+                        Tem uma atividade cultural
+                        para compartilhar?
+                    </p>
+                    <a href="../projeto/publicar.html" class="botao">
+                        Publicar
+                    </a>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>✿ Culturama</strong></p>
+            <p>Conectando pessoas através da cultura.</p>
+            <p>Contato: contato@culturama.gmail.com</p>
+            <p>© 2026 Culturama - Projeto acadêmico.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
