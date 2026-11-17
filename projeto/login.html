@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culturama | Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho e menu -->
+    <header class="cabecalho">
+        <div class="container barra">
+            <a href="../projeto/index.html" class="logo">✿ Culturama</a>
+
+            <nav class="menu" aria-label="Menu principal">
+                <a href="../projeto/index.html">Início</a>
+                <a href="../projeto/eventos.html">Eventos</a>
+                <a href="../projeto/publicar.html">Publicar</a>
+                <a href="../projeto/cadastro.html">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container secao">
+
+        <div class="titulo-pagina">
+            <p class="etiqueta">BEM-VINDO DE VOLTA</p>
+            <h1>Acesse sua conta</h1>
+            <p>
+                Entre para publicar eventos e acompanhar
+                a programação cultural.
+            </p>
+        </div>
+
+        <section class="formulario-caixa formulario-menor">
+
+            <h2>Login</h2>
+
+            <form>
+
+                <div class="campo">
+                    <label for="login-usuario">
+                        E-mail ou nome de usuário *
+                    </label>
+                    <input type="text" id="login-usuario" name="login-usuario" placeholder="seuemail@exemplo.com"
+                        autocomplete="username" required>
+                </div>
+
+                <div class="campo">
+                    <label for="login-senha">
+                        Senha *
+                    </label>
+                    <input type="password" id="login-senha" name="login-senha" minlength="8"
+                        placeholder="Digite sua senha" autocomplete="current-password" required>
+                </div>
+
+                <div class="linha-login">
+                    <label>
+                        <input type="checkbox" name="lembrar">
+                        Lembrar de mim
+                    </label>
+                    <a href="login.html">Esqueci minha senha</a>
+                </div>
+
+                <button type="submit" class="botao botao-largo">
+                    Entrar
+                </button>
+
+                <p class="aviso">
+                    O login será ativado futuramente.
+                </p>
+
+            </form>
+
+            <div class="mensagem-formulario">
+                <p>
+                    Ainda não tem conta?
+                    <a href="../projeto/cadastro.html">Cadastre-se</a>
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>✿ Culturama</strong></p>
+            <p>Conectando pessoas através da cultura.</p>
+            <p>Contato: contato@culturama.com.br</p>
+            <p>© 2026 Culturama - Projeto acadêmico.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

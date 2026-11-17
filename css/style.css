@@ -154,40 +154,9 @@ p {
     font-size: 14px;
 }
 
-.botao-secundario {
-    display: inline-block;
-    padding: 9px 15px;
-    border: 2px solid var(--borgonha);
-    border-radius: 9px;
-    background-color: transparent;
-    color: var(--borgonha);
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.botao-secundario:hover {
-    background-color: var(--bege);
-}
 
 .botao-largo {
     width: 100%;
-}
-
-/* Botões que dependem de um sistema futuro */
-button:disabled {
-    opacity: 0.55;
-    cursor: not-allowed;
-}
-
-button:disabled:hover {
-    background-color: var(--borgonha);
-    border-color: var(--borgonha);
-}
-
-.botao-secundario:disabled:hover {
-    background-color: transparent;
 }
 
 /* ==================================
@@ -381,74 +350,6 @@ button:disabled:hover {
 }
 
 /* ==================================
-   CALENDÁRIO
-   ================================== */
-
-.lateral {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.calendario h2 {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.calendario p {
-    text-align: center;
-    font-size: 13px;
-    color: var(--texto-claro);
-}
-
-.dias-semana,
-.dias {
-    display: grid;
-    grid-template-columns: repeat(7, minmax(0, 1fr));
-    gap: 4px;
-    text-align: center;
-}
-
-.dias-semana {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 12px;
-}
-
-.dias span {
-    padding: 7px 0;
-    border-radius: 6px;
-    font-size: 12px;
-}
-
-.dia-evento {
-    background-color: var(--borgonha);
-    color: var(--branco);
-    font-weight: bold;
-}
-
-.calendario .legenda {
-    color: var(--borgonha);
-    margin-top: 20px;
-    font-size: 12px;
-}
-
-.painel-lateral {
-    text-align: center;
-}
-
-.painel-lateral h3 {
-    color: var(--borgonha);
-    margin-bottom: 10px;
-}
-
-.painel-lateral p {
-    margin-bottom: 20px;
-}
-
-/* ==================================
    FORMULÁRIOS
    ================================== */
 
@@ -539,12 +440,6 @@ fieldset.campo legend {
     margin-bottom: 0;
 }
 
-.aviso {
-    font-size: 13px;
-    color: var(--texto-claro);
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
 
 .mensagem-formulario {
     text-align: center;
@@ -575,3 +470,29 @@ fieldset.campo legend {
     margin-bottom: 8px;
     font-size: 14px;
 }       
+
+/* Linha com "Lembrar de mim" e "Esqueci minha senha" */
+.linha-login {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 10px;
+flex-wrap: wrap;
+margin-bottom: 20px;
+font-size: 14px;
+}
+
+.linha-login label {
+display: flex;
+align-items: center;
+gap: 8px;
+color: var(--texto);
+}
+
+.linha-login a {
+font-weight: bold;
+}
+
+.linha-login a:hover {
+text-decoration: underline;
+}
